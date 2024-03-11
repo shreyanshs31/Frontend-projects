@@ -1,0 +1,170 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+body {
+    font-family: 'Manrope';
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin-top: 2em;
+    padding: 6em 2em;
+    text-align: center;
+    display: flex;
+}
+
+.border-container {
+    border-radius: 1em;
+    box-shadow: 0px 4px 6px hsl(212, 23%, 69%);
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.text-container {
+    background-color: white;
+    text-align: left;
+    padding: 2em 2em;    
+}
+
+.text-container h1 {
+    font-family: 'Manrope';
+    font-size: large;
+    font-weight: 700;
+    line-height: 1.6;
+    color:hsl(217, 19%, 35%);
+}
+
+.text-container p {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: medium;
+    line-height: 1.6;
+    color: hsl(214, 17%, 51%);
+}  
+
+.author-container {
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    height: 5em;
+    padding: 1em 2em;
+    border-radius: 0 0 1em 1em;
+}
+
+.author-info {
+    display: flex;
+}
+
+.auther-img img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.author-name {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+.name {
+    margin: 1em 0 .5em 0;
+    font-size: medium;
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);
+}
+
+.birthday {
+    margin: 0%;
+    font-weight: 500;
+    font-size: medium;
+    color: hsl(214, 17%, 51%);
+}
+
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 1px solid transparent;
+    padding: .75em;
+    border-radius: 50%;
+}
+
+.share-container {
+    background-color: hsl(217, 19%, 35%);
+    display: none;
+    text-align: center;
+    height: 5em;
+    padding: 1em 2em;
+    border-radius: 0 0 1em 1em;
+    justify-content: space-between;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    justify-content:left;
+}
+
+.share-txt h2{
+    padding-top: .2em;
+    color: white;
+    font-family: "Manrope";
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.social-icon {
+    text-align: center;
+    padding-left: 1em;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.icon {
+    margin-right: 1.4em;
+}
+
+.social-icon img{
+    padding: .2em;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+@media (min-width: 930px) {
+
+    .main-container {
+        margin: 0;
+        padding: 1em 2em 1em 2em;
+    }
+    .border-container{
+        display: inline-grid;
+        grid-template-columns:repeat(2, 50%);
+    }
+
+    .text-container h1 {
+        text-align: justify;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .text-container p {
+        text-align: justify;
+        width: 100%;
+        font-size: 2vw;
+    }
+}
